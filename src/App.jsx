@@ -1,7 +1,11 @@
+// App.jsx
+import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FeatureCard from './components/FeatureCard';
 import Footer from './components/Footer';
+import Dashboard from './components/Dashboard';
+import AboutUs from './components/AboutUs';
 
 function App() {
   const features = [
@@ -23,6 +27,8 @@ function App() {
           ))}
         </div>
       </section>
+      <AboutUs />
+      <Dashboard />
       <Footer />
     </>
   );
