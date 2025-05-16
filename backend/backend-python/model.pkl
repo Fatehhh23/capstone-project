@@ -1,0 +1,9 @@
+import joblib
+from sklearn.ensemble import RandomForestClassifier
+
+# Melatih model (contoh)
+model = RandomForestClassifier()
+model.fit(X_train, y_train)  # Pastikan Anda memiliki data X_train dan y_train
+
+# Menyimpan model
+joblib.dump(model, 'model.pkl')
